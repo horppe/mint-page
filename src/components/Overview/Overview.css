@@ -1,0 +1,74 @@
+@media only screen and (min-width: 768px) {
+
+    .overview-container {
+        background-color: #E5E5E5;
+        flex            : 1;
+    }
+
+    .info-card-row {
+        display       : flex;
+        flex-direction: row;
+        margin-left   : 10px;
+    }
+
+    .chart-container {
+        height        : 329px;
+        margin        : 20px 30px;
+        display       : flex;
+        flex-direction: row;
+        background    : #FFFFFF;
+        border        : 1px solid #EEF8FD;
+        box-sizing    : border-box;
+        border-radius : 2px;
+    }
+
+    .chart-container .chart-left {
+        width       : 65%;
+        border-right: 4px solid #F7F8FA;
+    }
+
+
+    .chart-container .chart-right {
+        width           : 35%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chart-container .chart-info-title {
+        font-size  : 12px;
+        font-weight: bold;
+        margin     : 20px 0 2px 0;
+    }
+
+    .chart-container .chart-info-text {
+        display: flex;
+        font-size  : 12px;
+        margin     : 10px 0 2px 0;
+    } 
+
+    .chart-container .chart-right-item:first-child{
+        border-bottom: 4px solid #F7F8FA;
+    }
+
+    .chart-container .chart-right-item {
+        flex: 1;
+        padding: 0 25px;
+        background-color: #fff;
+    }
+    /* .chart-container .chart-right-item:nth-child(2) {
+        background-color: red;
+    } */
+
+    .yellow-sub {
+        color: #FDC203;
+    }
+
+    .green-sub {
+        color: #27AE60;
+    }
+
+    .blue-sub {
+        color: #1860EC;
+    }
+}

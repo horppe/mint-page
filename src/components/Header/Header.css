@@ -9,20 +9,20 @@
         height: 60px;
         display:flex;
         align-items: center;
-        box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07)
+        box-shadow: 0px 5px 10px rgba(79, 79, 79, 0.09)
     }
     
     .header .transmonitor-text {
         color: #1875F0;
         font-weight: bold;
         font-size: 1.2em;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     
     
     .header .search-container {
         /* background-color: blue; */
-        margin-left: 50px;
+        margin-left: 125px;
         display: flex;
         align-items: center;
         

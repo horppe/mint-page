@@ -65,7 +65,7 @@ function SideBar() {
                 <div className="sidebar-item-icon" >
                     <img src={AllOrdersIcon} />
                 </div>
-                <div>All Orders</div>
+                <div style={{marginLeft: "5px"}}>All Orders</div>
             </div>
             <div className="sidebar-item">
 
@@ -86,7 +86,7 @@ function SideBar() {
             <div className="sidebar-item-icon" >
                     <img src={UserOutlineIcon} />
                 </div>
-                <div>Reconciled Orders</div>
+                <div>Merchant Profile</div>
             </div>
 
         </div>

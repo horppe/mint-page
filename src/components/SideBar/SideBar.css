@@ -1,10 +1,11 @@
 
 .sidebar-container {
     height          : 88vh;
-    width           : 260px;
+    width: 260px;
+    max-width           : 260px;
     /* background-color: #fff; */
-    background-color: orange;
-    margin-top: 8px;
+    /* background-color: orange; */
+    /* margin-top: 8px; */
 
 }
 
