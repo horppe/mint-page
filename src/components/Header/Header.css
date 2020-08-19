@@ -1,31 +1,22 @@
 
 @media only screen and (max-width: 768px) {
-    .App {
-        display: none;
-    }
-
-    body::after {
-        content: "Please view this webpage on a Desktop device or a larger screen";
-        color: red;
-        margin: auto;
-        text-align: center;
-    }
+    
 }
 
 @media only screen and (min-width: 768px) {
     .header {
-        background-color: orange;
+        background-color: #fff;
         height: 60px;
         display:flex;
         align-items: center;
-    
+        box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07)
     }
     
     .header .transmonitor-text {
         color: #1875F0;
         font-weight: bold;
         font-size: 1.2em;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     
     

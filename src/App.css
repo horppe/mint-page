@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 768px) {
+    .App {
+        display: none;
+    }
+
+    body::after {
+        content: "Please view this webpage on a Desktop device or a larger screen";
+        color: red;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+
+    }
+
+    body {
+        font-size: 14px;
+    }
+    
+}
