@@ -1,0 +1,122 @@
+
+@media only screen and (max-width: 768px) {
+    .App {
+        display: none;
+    }
+
+    body::after {
+        content: "Please view this webpage on a Desktop device or a larger screen";
+        color: red;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        background-color: orange;
+        height: 60px;
+        display:flex;
+        align-items: center;
+    
+    }
+    
+    .header .transmonitor-text {
+        color: #1875F0;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    
+    
+    .header .search-container {
+        /* background-color: blue; */
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .header .search-icon {
+        margin-top: 2px;
+    }
+    
+    .header .search-input {
+        border: none;
+        outline: none;
+         height: 20px;
+         width: 50vw;
+         margin-left: 10px;
+         padding-left: 5px;
+         color: #647787;
+    }
+    
+    .header .header-right {
+        flex: 1;
+        /* background-color: orange; */
+        height: 100%;
+        /* margin-left: auto; */
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .header .header-right .header-button-text {
+        padding: 10px 20px;
+        color: #647787;
+        font-size: .9em;
+    }
+
+    .header .header-right .notification-icon {
+        position: relative;
+        margin-left: 20px;
+        margin-top: 2px;
+    }
+
+    .header .header-right .notification-icon .notification-count {
+        position: absolute;
+        top: -5px;
+        right: -3px;
+        height: 13px;
+        width: 13px;
+        border-radius: 100px;
+        background-color: #1860EC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .header-right .notification-icon .notification-count > div {
+        font-size: .6em;
+        color: #fff;
+
+    }
+
+    .header .header-right .profile-area {
+        flex: 1;
+        height: 100%;
+        margin-left: 10px;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .header-right .profile-area .profile-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .header-right .profile-area .profile-image img {
+        background-color: pink;
+        height: 25px;
+        width: 25px;
+        border-radius: 100px;
+        margin-left: 10px;
+    }
+
+    .header .header-right .profile-area .profile-info > div {
+        color: #647787;
+        font-size: .8em;
+    }
+    
+}
