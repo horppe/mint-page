@@ -1,15 +1,15 @@
 import React from 'react';
-import './AllPayments.css';
+import './ReconciledOrders.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
-import { Payment } from '../../types/Payment';
-import { PaymentDataTable } from '../DataTable/DataTable';
+import { OrderDataTable } from '../DataTable/DataTable';
+import { Order } from '../../types/Order';
 interface Props {
-    payments: Payment[],
+    orders: Order[],
 }
 
-class AllPayments extends React.Component<Props> {
+class ReconciledOrders extends React.Component<Props> {
 
     componentDidMount = () => {
         
@@ -21,10 +21,10 @@ class AllPayments extends React.Component<Props> {
 
             <div
                 className="payment-text"
-            >All Payments</div>
+            >Reconciled Orders</div>
             <div className="record-list" >
 
-            <PaymentDataTable data={this.props.payments} />
+            <OrderDataTable data={this.props.orders} />
 
             </div>
         </div>);
@@ -33,4 +33,4 @@ class AllPayments extends React.Component<Props> {
 
 }
 
-export default AllPayments;
+export default ReconciledOrders;

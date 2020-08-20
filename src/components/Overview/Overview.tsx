@@ -8,16 +8,18 @@ import "datatables.net-dt/css/jquery.dataTables.min.css"
 import { Payment } from '../../types/Payment';
 import { PaymentDataTable } from '../DataTable/DataTable';
 import "chart.js/dist/Chart.bundle.min";
+import { Order } from '../../types/Order';
 var Chart = (window as any).Chart;
 
 interface Props {
     payments: Payment[],
+    orders: Order[]
 }
 
 
 
 class Overview extends React.Component<Props> {
-    chart = undefined;
+
     componentDidMount = () => {
         console.log("Chart:", Chart);
         var ctx = (document.getElementById('myChart') as HTMLCanvasElement)
@@ -82,7 +84,7 @@ class Overview extends React.Component<Props> {
 
     render = () => {
 
-        // console.log("Options", canvasOptions)
+        
         return (<div
             className="overview-container">
 
@@ -133,14 +135,14 @@ class Overview extends React.Component<Props> {
                             trailColor="#FDC203"
                         />
                         <div className="chart-info-text">
-                            Pending Orders: {" "}<div className="yellow-sub">&nbsp;{"20"}</div>
+                            Pending Orders: {" "}<div className="yellow-sub">&nbsp;{this.props.orders.filter(ele => ele.status == "pending").length}</div>
                         </div>
 
                         <div className="chart-info-text">
-                            Reconciled Orders: {" "}<div className="green-sub">&nbsp;{"80"}</div>
+                            Reconciled Orders: {" "}<div className="green-sub">&nbsp;{this.props.orders.filter(ele => ele.status == "reconciled").length}</div>
                         </div>
                         <div className="chart-info-text">
-                            Total Orders: {" "}<div className="blue-sub">&nbsp;{"100"}</div>
+                            Total Orders: {" "}<div className="blue-sub">&nbsp;{this.props.orders.length}</div>
                         </div>
 
                     </div>
@@ -156,14 +158,14 @@ class Overview extends React.Component<Props> {
                             trailColor="#FDC203"
                         />
                         <div className="chart-info-text">
-                            Un-reconciled Payments: {" "}<div className="yellow-sub">&nbsp;{"20"}</div>
+                            Un-reconciled Payments: {" "}<div className="yellow-sub">&nbsp;{this.props.payments.filter(ele => ele.status == "unreconciled").length}</div>
                         </div>
 
                         <div className="chart-info-text">
-                            Reconciled Payments: {" "}<div className="green-sub">&nbsp;{"80"}</div>
+                            Reconciled Payments: {" "}<div className="green-sub">&nbsp;{this.props.payments.filter(ele => ele.status == "reconciled").length}</div>
                         </div>
                         <div className="chart-info-text">
-                            Total Payments: {" "}<div className="blue-sub">&nbsp;{"100"}</div>
+                            Total Payments: {" "}<div className="blue-sub">&nbsp;{this.props.payments.length}</div>
                         </div>
 
                     </div>

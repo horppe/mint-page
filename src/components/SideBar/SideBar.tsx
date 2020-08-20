@@ -22,36 +22,50 @@ function SideBar() {
             </div>
 
             <div className="section-title">Main</div>
-            <div className="sidebar-item">
+            <Link to="/overview">
+                <div className="sidebar-item">
 
-                <div className="sidebar-item-icon" >
-                    <img src={SpeedometerIcon} />
+                    <div className="sidebar-item-icon" >
+                        <img src={SpeedometerIcon} />
+                    </div>
+                    {/* <Link to="/overview">Overview</Link> */}
+                    <div>Overview</div>
                 </div>
-                <Link to="/overview">Overview</Link>
-            </div>
+            </Link>
+
 
             <div className="section-title">Payments</div>
-            <div className="sidebar-item">
+            <Link to="/all-payments">
+                <div className="sidebar-item">
 
-                <div className="sidebar-item-icon" >
-                    <img src={AllPaymentsIcon} />
+                    <div className="sidebar-item-icon" >
+                        <img src={AllPaymentsIcon} />
+                    </div>
+                    <div>All Payments</div>
                 </div>
-                <Link to="/all-payments">All Payments</Link>
-            </div>
-            <div className="sidebar-item">
+            </Link>
 
-                <div className="sidebar-item-icon" >
-                    <img src={ReconciledPaymentsIcon} />
-                </div>
-                <Link to="/reconciled-payments">Reconciled Payments</Link>
-            </div>
-            <div className="sidebar-item">
+            <Link to="/reconciled-payments">
 
-                <div className="sidebar-item-icon" >
-                    <img src={UnReconciledPaymentsIcon} />
+                <div className="sidebar-item">
+
+                    <div className="sidebar-item-icon" >
+                        <img src={ReconciledPaymentsIcon} />
+                    </div>
+                    <div>Reconciled Payments</div>
                 </div>
-                <Link to="/unreconciled-payments">Un-Reconciled Payments</Link>
-            </div>
+            </Link>
+            <Link to="/unreconciled-payments">
+
+                <div className="sidebar-item">
+
+                    <div className="sidebar-item-icon" >
+                        <img src={UnReconciledPaymentsIcon} />
+                    </div>
+                    <div>Un-Reconciled Payments</div>
+                </div>
+            </Link>
+
             <div className="sidebar-item">
 
                 <div className="sidebar-item-icon" >
@@ -61,30 +75,44 @@ function SideBar() {
             </div>
 
             <div className="section-title">Orders</div>
-            <div className="sidebar-item">
 
-                <div className="sidebar-item-icon" >
-                    <img src={AllOrdersIcon} />
+            <Link to="/all-orders">
+
+                <div className="sidebar-item">
+
+                    <div className="sidebar-item-icon" >
+                        <img src={AllOrdersIcon} />
+                    </div>
+                    <div style={{ marginLeft: "5px" }} >All Orders</div>
                 </div>
-                <div style={{marginLeft: "5px"}}>All Orders</div>
-            </div>
-            <div className="sidebar-item">
+            </Link>
 
-                <div className="sidebar-item-icon" >
-                    <img src={PendingOrdersIcon} />
+            <Link to="/pending-orders">
+
+                <div className="sidebar-item">
+
+                    <div className="sidebar-item-icon" >
+                        <img src={PendingOrdersIcon} />
+                    </div>
+                    <div>Pending Orders</div>
                 </div>
-                <div>Pending Orders</div>
-            </div>
-            <div className="sidebar-item">
+            </Link>
 
-                <div className="sidebar-item-icon" >
-                    <img src={ReconciledOrdersIcon} />
+
+            <Link to="/reconciled-orders">
+
+                <div className="sidebar-item">
+
+                    <div className="sidebar-item-icon" >
+                        <img src={ReconciledOrdersIcon} />
+                    </div>
+                    <div>Reconciled Orders</div>
                 </div>
-                <div>Reconciled Orders</div>
-            </div>
+            </Link>
 
-            <div className="sidebar-item" style={{marginTop: "20px"}}>
-            <div className="sidebar-item-icon" >
+
+            <div className="sidebar-item" style={{ marginTop: "20px" }}>
+                <div className="sidebar-item-icon" >
                     <img src={UserOutlineIcon} />
                 </div>
                 <div>Merchant Profile</div>
