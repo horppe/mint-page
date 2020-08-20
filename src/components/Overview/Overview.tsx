@@ -4,56 +4,15 @@ import InfoCard from '../InfoCard/InfoCard';
 import { Line } from 'rc-progress';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// react-bootstrap-table2 need you to add bootstrap css in your application firstly. 
-// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
-// import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
 import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
 import { Payment } from '../../types/Payment';
 import { PaymentDataTable } from '../DataTable/DataTable';
-// import paginationFactory from 'react-bootstrap-table2-paginator';
-
-// import BootstrapTable from 'react-bootstrap-table-next';
-
-
-const products: Payment[] = [
-
-];
-
-for (let i = 0; i < 30; i++) {
-    products.push({
-        id: "sahbdlfkhd", 
-        name: `Apple Mac Book 15" 25${i} SSD ${i}`,
-        price: "19.99",
-        type: "VW",
-        transactionNumber: i,
-        time: Date.now(),
-        status: i % 2 == 0 ? "reconciled" : i < 15 ? "pending" : "unreconciled",
-
-    });
+interface Props {
+    payments: Payment[],
 }
-const columns = [{
-    dataField: 'type',
-    text: 'Item Type'
-}, {
-    dataField: 'name',
-    text: ''
-}, {
-    dataField: 'price',
-    text: 'Price'
-},
-{
-    dataField: 'transactionNumber',
-    text: 'Transaction No'
-},
-{
-    dataField: 'time',
 
-}
-];
-
-
-class Overview extends React.Component {
+class Overview extends React.Component<Props> {
 
     componentDidMount = () => {
         
@@ -149,17 +108,13 @@ class Overview extends React.Component {
             >Payments</div>
             <div className="record-list" >
 
-            <PaymentDataTable data={products} />
+            <PaymentDataTable data={this.props.payments} />
 
             </div>
         </div>);
 
     }
 
-
-    ohh = () => {
-        console.log("pressed")
-    }
 }
 
 export default Overview;

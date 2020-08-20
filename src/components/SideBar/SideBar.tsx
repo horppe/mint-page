@@ -11,6 +11,7 @@ import AllOrdersIcon from '../../assets/icons/all-orders.svg';
 import ReconciledOrdersIcon from '../../assets/icons/reconciled-orders.svg';
 import PendingOrdersIcon from '../../assets/icons/pending-orders.svg';
 import UserOutlineIcon from '../../assets/icons/user-outline.svg';
+import { Link } from 'react-router-dom';
 
 
 function SideBar() {
@@ -26,7 +27,7 @@ function SideBar() {
                 <div className="sidebar-item-icon" >
                     <img src={SpeedometerIcon} />
                 </div>
-                <div>Overview</div>
+                <Link to="/overview">Overview</Link>
             </div>
 
             <div className="section-title">Payments</div>
@@ -35,21 +36,21 @@ function SideBar() {
                 <div className="sidebar-item-icon" >
                     <img src={AllPaymentsIcon} />
                 </div>
-                <div>All Payments</div>
+                <Link to="/all-payments">All Payments</Link>
             </div>
             <div className="sidebar-item">
 
                 <div className="sidebar-item-icon" >
                     <img src={ReconciledPaymentsIcon} />
                 </div>
-                <div>Reconciled Payments</div>
+                <Link to="/reconciled-payments">Reconciled Payments</Link>
             </div>
             <div className="sidebar-item">
 
                 <div className="sidebar-item-icon" >
                     <img src={UnReconciledPaymentsIcon} />
                 </div>
-                <div>Un-Reconciled Payments</div>
+                <Link to="/unreconciled-payments">Un-Reconciled Payments</Link>
             </div>
             <div className="sidebar-item">
 

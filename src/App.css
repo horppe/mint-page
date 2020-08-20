@@ -18,6 +18,10 @@
 
     }
 
+    a {
+        color: inherit !important;
+    }
+
     body {
         font-size: 14px !important;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
