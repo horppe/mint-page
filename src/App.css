@@ -13,18 +13,18 @@
 
 
 @media only screen and (min-width: 768px) {
-    .container {
+    .app-container {
         display: flex;
 
     }
 
     body {
-        font-size: 14px;
+        font-size: 14px !important;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: .5px;
     }
 
-    .container .content {
+    .app-container .content {
         /* margin-top: 8px; */
         flex               : 1;
         display            : flex;

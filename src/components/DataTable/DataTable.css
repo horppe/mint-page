@@ -1,0 +1,76 @@
+    #myTable {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .table-header-class {
+        background-color: #EAEEF0;
+    }
+
+    table.dataTable.no-footer {
+        border-bottom: none !important;
+    }
+
+    table.dataTable thead th, table.dataTable thead td {
+        border-bottom: none !important;
+    }
+
+    .table-bordered td, .table-bordered th {
+        border: none !important;
+    }
+
+    #myTable_length {
+        margin: 10px 0 20px 20px;
+        
+    }
+
+    #myTable_length select {
+        border: none;
+        color: #1875F0;
+    }
+
+    table tr td.product-type > div {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        color: white;
+        background-color: #7F8FA4;
+        margin-left: 10px;
+    }
+    .table td, .table th {
+        vertical-align: middle !important;
+    }
+
+    .table tbody td {
+        /* border-bottom: 1px solid #111111 !important; */
+        border-top: 1px solid #dee2e6 !important;
+    }
+
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 15px 10px;
+    }
+
+    #myTable_filter {
+        margin: 5px 0 0 70px;
+        /* display: none; */
+    }
+
+    #myTable_filter input, #mySearch {
+        border: none;
+        outline: none;
+        height: 20px;
+        width: 30vw;
+        margin-left: 10px;
+        padding: 0 5px;
+        color: #647787;
+        background-color: transparent;
+        border-bottom: 0.5px solid #787878;
+        font-size: 12px;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
+        float: right !important;
+    }
