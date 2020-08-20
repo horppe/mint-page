@@ -36,6 +36,10 @@ function App() {
           <Route path="/overview">
             <Overview payments={payments} />
           </Route>
+
+          <Route path="/">
+            <Overview payments={payments} />
+          </Route>
           
           </Switch>
          

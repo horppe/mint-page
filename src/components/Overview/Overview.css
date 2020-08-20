@@ -89,6 +89,10 @@
         color: #1860EC;
     }
 
+    .grey-sub {
+        color: #C4C4C4;
+    }
+
     .record-list {
         /* background-color: white; */
         margin: 0 30px 30px 30px;

@@ -73,6 +73,26 @@ export class PaymentDataTable extends Component<Props> {
 
         }
 
+        renderColor = status => {
+            if(status == 'reconciled'){
+                return 'green-box';
+            } else if(status == 'unreconciled'){
+                return 'grey-box';
+            } else if(status == 'pending') {
+                return 'yellow-box';
+            }
+        }
+
+        renderTextColor = status => {
+            if(status == 'reconciled'){
+                return 'green-sub';
+            } else if(status == 'unreconciled'){
+                return 'grey-sub';
+            } else if(status == 'pending') {
+                return 'yellow-sub';
+            }
+        }
+
     render = () => {
         const { data } = this.props;
 
@@ -110,7 +130,7 @@ export class PaymentDataTable extends Component<Props> {
                                         <td>{payment.price}</td>
                                         <td>{payment.transactionNumber}</td>
                                         <td>{payment.time}</td>
-                                        <td>{payment.price}</td>
+                                        <td>{payment.status}</td>
                                     </tr>
                                 ))
                                 : data.map(payment => (
@@ -120,7 +140,12 @@ export class PaymentDataTable extends Component<Props> {
                                         <td>{payment.price}</td>
                                         <td>{payment.transactionNumber}</td>
                                         <td>{payment.time}</td>
-                                        <td>{payment.price}</td>
+                                        <td>
+                                            <div className="status-container">
+                                                <div className={`status-indicator ${this.renderColor(payment.status)}`}></div>
+                                                <div className={`status-text ${this.renderTextColor(payment.status)}`}>{payment.status}</div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 ))
                         }

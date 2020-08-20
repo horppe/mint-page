@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/canvasjs": "^1.9.6",
     "@types/jest": "^24.0.0",
     "@types/jquery": "^3.5.1",
     "@types/node": "^12.0.0",
@@ -13,6 +14,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
     "bootstrap": "^4.5.2",
+    "canvasjs": "^1.8.3",
     "datatables.net-dt": "^1.10.21",
     "jquery": "^3.5.1",
     "rc-progress": "^3.0.0",
@@ -30,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "yarn upgrade @types/react@latest"
   },
   "eslintConfig": {
     "extends": "react-app"

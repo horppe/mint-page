@@ -3,7 +3,7 @@ import './Overview.css';
 import InfoCard from '../InfoCard/InfoCard';
 import { Line } from 'rc-progress';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import CanvasJS from 'canvasjs';
 import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
 import { Payment } from '../../types/Payment';
@@ -11,6 +11,8 @@ import { PaymentDataTable } from '../DataTable/DataTable';
 interface Props {
     payments: Payment[],
 }
+
+
 
 class Overview extends React.Component<Props> {
 

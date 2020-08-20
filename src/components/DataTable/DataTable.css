@@ -1,6 +1,7 @@
     #myTable {
-        margin-top: 20px;
+        margin-top   : 20px;
         margin-bottom: 20px;
+        font-size    : 11px;
     }
 
     .table-header-class {
@@ -11,36 +12,40 @@
         border-bottom: none !important;
     }
 
-    table.dataTable thead th, table.dataTable thead td {
+    table.dataTable thead th,
+    table.dataTable thead td {
         border-bottom: none !important;
     }
 
-    .table-bordered td, .table-bordered th {
+    .table-bordered td,
+    .table-bordered th {
         border: none !important;
     }
 
     #myTable_length {
         margin: 10px 0 20px 20px;
-        
+
     }
 
     #myTable_length select {
         border: none;
-        color: #1875F0;
+        color : #1875F0;
     }
 
-    table tr td.product-type > div {
-        height: 40px;
-        width: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100px;
-        color: white;
+    table tr td.product-type>div {
+        height          : 40px;
+        width           : 40px;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        border-radius   : 100px;
+        color           : white;
         background-color: #7F8FA4;
-        margin-left: 10px;
+        margin-left     : 10px;
     }
-    .table td, .table th {
+
+    .table td,
+    .table th {
         vertical-align: middle !important;
     }
 
@@ -49,28 +54,73 @@
         border-top: 1px solid #dee2e6 !important;
     }
 
-    table.dataTable tbody th, table.dataTable tbody td {
+    table.dataTable tbody th,
+    table.dataTable tbody td {
         padding: 15px 10px;
     }
 
     #myTable_filter {
-        margin: 5px 0 0 70px;
+        margin    : 5px 0 0 70px;
         /* display: none; */
     }
 
-    #myTable_filter input, #mySearch {
-        border: none;
-        outline: none;
-        height: 20px;
-        width: 30vw;
-        margin-left: 10px;
-        padding: 0 5px;
-        color: #647787;
+    #myTable_filter input,
+    #mySearch {
+        border          : none;
+        outline         : none;
+        height          : 20px;
+        width           : 30vw;
+        margin-left     : 10px;
+        padding         : 0 5px;
+        color           : #647787;
         background-color: transparent;
-        border-bottom: 0.5px solid #787878;
-        font-size: 12px;
+        border-bottom   : 0.5px solid #787878;
+        font-size       : 12px;
     }
 
     .dataTables_wrapper .dataTables_filter {
         float: right !important;
+    }
+
+    .status-container {
+        width          : 120px;
+        height         : 30px;
+        border-radius  : 30px;
+        border         : 1px solid #CCCFD4;
+        display        : flex;
+        flex-direction : row;
+        justify-content: center;
+        align-items    : center;
+        position       : relative;
+    }
+
+    .status-indicator {
+        height       : 15px;
+        width        : 15px;
+        border-radius: 50px;
+        position     : absolute;
+        /* top       : 50%; */
+        align-self   : center;
+        left         : .5vw;
+
+    }
+
+    .status-text {
+        text-transform: capitalize;
+    }
+
+    .yellow-box {
+        background-color: #FDC203;
+    }
+
+    .green-box {
+        background-color: #27AE60;
+    }
+
+    .blue-box {
+        background-color: #1860EC;
+    }
+
+    .grey-box {
+        background-color: #C4C4C4;
     }
